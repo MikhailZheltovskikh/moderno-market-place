@@ -1770,13 +1770,13 @@ button.icon-unsorted {
 .product-one__tabs.settings__tabs {
    display: flex;
    .tabs {
+      display: block;
       max-width: 270px;
       width: 100%;
       margin-right: 30px;
       border: 1px solid #dedede;
       border-bottom: none;
       text-align: left;
-      display: block;
       height: 100%;
 
       span {
@@ -1838,7 +1838,7 @@ button.icon-unsorted {
       width: 260px;
    }
    input {
-      min-width: 540px;
+      max-width: 540px;
       width: 100%;
       height: 40px;
       color: #000;
@@ -2082,7 +2082,6 @@ button.icon-unsorted {
       span {
          color: $green;
       }
-      
    }
    select,
    input,
@@ -2162,7 +2161,7 @@ button.icon-unsorted {
    .jq-file.focused .jq-file__name {
       border: none;
    }
-  
+
    .jq-file__browse {
       top: 5px;
       right: auto;
@@ -2180,19 +2179,19 @@ button.icon-unsorted {
 }
 //end upload
 //start withdrawals
-.withdrawals__inner{
+.withdrawals__inner {
    display: flex;
    justify-content: space-between;
    margin-bottom: 110px;
 }
-.withdrawals__col{
+.withdrawals__col {
    max-width: 570px;
    width: 100%;
    background-color: #fff;
    border: 1px solid #d7d7d7;
    height: 100%;
 }
-.withdrawals__title{
+.withdrawals__title {
    padding: 18px 32px 24px;
    border-bottom: 1px solid #d7d7d7;
    margin-bottom: 30px;
@@ -2200,10 +2199,10 @@ button.icon-unsorted {
    font-size: 24px;
    @include f500;
 }
-.withdrawals__content{
+.withdrawals__content {
    padding-left: 35px;
    padding-right: 40px;
-   button{
+   button {
       margin-bottom: 50px;
       color: #fff;
       background-color: $green;
@@ -2212,21 +2211,21 @@ button.icon-unsorted {
       cursor: pointer;
    }
 }
-.withdrawals__form-line{
+.withdrawals__form-line {
    margin-bottom: 25px;
-   label{
+   label {
       display: block;
       width: 100%;
       font-size: 16px;
       @include f500;
       margin-bottom: 15px;
       color: $bg;
-      span{
+      span {
          color: $green;
       }
    }
    input,
-   select{
+   select {
       display: block;
       width: 100%;
       border: 1px solid #d7d7d7;
@@ -2270,43 +2269,40 @@ button.icon-unsorted {
    .jq-selectbox__dropdown {
       top: 40px;
    }
-   
 }
-.withdrawals__content-items{
+.withdrawals__content-items {
    padding-bottom: 35px;
 }
-.withdrawals__content-item{
+.withdrawals__content-item {
    display: flex;
    height: 42px;
    align-items: center;
    color: #444;
    font-size: 13px;
-   &:nth-child(odd){
+   &:nth-child(odd) {
       background-color: #f9f9f9;
    }
 }
-.withdrawals__content-date{
+.withdrawals__content-date {
    width: 154px;
    padding-left: 20px;
    @include f500;
 }
-.withdrawals__content-email{
+.withdrawals__content-email {
    width: 180px;
    @include f500;
 }
-.withdrawals__content-price{
+.withdrawals__content-price {
    width: 70px;
    @include f700;
 }
-.withdrawals__content-status{
+.withdrawals__content-status {
    width: 88px;
    @include f700;
-   &.withdrawals__content-paid{
+   &.withdrawals__content-paid {
       color: $green;
-   } 
+   }
 }
 //end withdrawals
-
-
 
 @import "midia";
